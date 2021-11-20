@@ -1,0 +1,55 @@
+.card {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    width: 500px;
+    padding: 50px;
+    margin: 50px;
+    background-color: #ddd;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 18px;
+    line-height: 32px;
+
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #aaa;
+    line-height: 16px;
+    padding: 5px;
+}
+
+hr {
+    width: 200px;
+    margin: 30px auto;
+    border: 1px solid black; /*如果边框的样式未定义，它将不可见。 这是因为样式默认为none*/
+    background-color: black;
+}
+
+
+p {
+    font-weight: 500;
+    line-height: 32px;
+}
+
+li {
+    font-weight: 500;
+    line-height: 28px;
+    border: 1px solid #aaa;
+    padding: 5px;
+
+}
+
+a {
+    color: #aaa;
+
+}
