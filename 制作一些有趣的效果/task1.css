@@ -1,0 +1,57 @@
+:root {
+    box-sizing: border-box;
+    /*width 默认设置内容区域的宽度，但如果 box-sizing 属性被设置为 border-box，就转而设置边框区域的宽度。*/
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 2em auto;
+    font-family: 'Architects Daughter', cursive;
+}
+
+hr {
+    width: 100%; /*使用外层元素的容纳区块宽度的百分比定义宽度。*/
+    height:10px;
+    background-color: dodgerblue;
+}
+
+.moby {
+    margin: 2em auto;
+    width: 50%; /*默认情况下显示为table的元素宽度不会扩展到100%*/
+    display: flex;
+    max-width: 800px;
+    /*background-color: antiquewhite;*/
+}
+
+/*实现等高列的两种方式：
+    1.使用CSS表格布局的等高列
+    2.使用Flexbox实现等高列
+*/
+.moby > h2 {
+    writing-mode: vertical-lr;
+    width: 10%;
+    padding: 1em; /*这个地方注意*/
+    text-align: center; /*设置外边距后生效*/
+    /*text-align: right;*只控制行内内容对齐*/
+    color: dodgerblue;
+    font-size: 2em;
+    margin: 0;
+}
+
+.inner {
+    width: 90%;
+    padding: 1em;
+    /*background-color: antiquewhite;*/
+}
+
+p:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*显示省略号*/
+}
