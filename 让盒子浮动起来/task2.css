@@ -1,0 +1,21 @@
+article {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 5px 5px 5px #dddd;
+    font-family: Georgia, serif;
+    overflow: hidden;
+    /*我们可以触发article生成BFC，那么par在计算高度时，par内部的浮动元素child也会参与计算。*/
+}
+
+.img {
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+.content {
+    height: 300px;
+    /*不能在此设置overflow:hidden，否则该盒子会构成一个单独的BFC而与浮动区域不重叠*/
+}
+

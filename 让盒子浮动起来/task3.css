@@ -1,0 +1,58 @@
+:root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+.header {
+    width: 100%;
+    padding: 2em 0;
+    background-color: blue;
+    margin: 1em auto;
+    border-radius: 1em;
+}
+.medium {
+    width: 100%;
+    padding:0;
+    background-color: blue;
+    margin: 0 auto;
+    border-radius: 1em;
+    /*新建BFC以清除浮动*/
+    overflow: hidden;
+}
+.footer {
+    width: 100%;
+    padding: 2em 0;
+    background-color: blue;
+    margin: 1em auto;
+    border-radius: 1em;
+}
+
+.m1 {
+    float: left;
+    margin: 10px;
+    width: 150px;
+    height: 300px;
+    /*定宽*/
+    background-color:red;
+    border-radius: 1em;
+}
+.m2 {
+    background-color: yellow;
+    height: 300px;
+    margin: 10px 170px;
+    border-radius: 1em;
+
+}
+.m3 {
+    float: right;
+    margin: 10px;
+    width:150px;
+    /*定宽*/
+    background-color: red;
+    height: 300px;
+    border-radius: 1em;
+}
+
