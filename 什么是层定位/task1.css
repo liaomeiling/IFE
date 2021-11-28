@@ -1,0 +1,39 @@
+body,html {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    /*使用网格定义使得图片位于浏览器窗口水平居中垂直居中*/
+    height: 100%;
+    display: grid;
+}
+figure {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    margin: auto;
+
+}
+
+.caption {
+    position: absolute;
+    width: 80%;
+    /*使用transform属性垂直并水平居中于父元素*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.9;
+}
+
+.img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.caption a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 0.5em;
+    color: white;
+}

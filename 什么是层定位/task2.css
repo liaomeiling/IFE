@@ -1,0 +1,30 @@
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.left {
+    width: 200px;
+    background-color: palevioletred;
+    position: absolute;
+    height: 300px;
+    left: 0;
+}
+
+.right {
+    width: 200px;
+    background-color: darkgreen;
+    position: absolute;
+    height: 300px;
+    right: 0;
+}
+
+.medium {
+    /*避免中间内容被覆盖*/
+    margin: 0.5em 210px;
+    background-color:cadetblue;
+    /*这里的高度属于正常文档流，因此body父元素会包含这个正常文档流*/
+    min-height: 200px;
+}
