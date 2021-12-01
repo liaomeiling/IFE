@@ -1,0 +1,61 @@
+body {
+    font-family: Rubik, Arial;
+}
+
+.outer{
+    width: 70%;
+    margin: 0 auto;
+    background-image: url("tea.jpg");
+
+}
+
+form {
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+}
+
+form hr {
+    width: 15%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#overlay {
+    width: 80%;
+    margin: 3% auto;
+    height: 95vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+    border:1px solid black;
+    max-width: 600px;
+}
+#overlay .done{
+    height: 100px;
+    display: block;
+    margin: auto;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+
+#logo {
+    /*不换行的文本垂直居中，让行高等于容器高度*/
+    height: 100px;
+    line-height: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+
+label {
+    margin-right: 25px;
+}

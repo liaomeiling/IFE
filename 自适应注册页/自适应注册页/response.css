@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik, Arial;
+}
+
+section {
+    /*给表单盒子添加阴影*/
+    box-shadow: 3px 6px 2px gray, -3px 0 2px gray, 0 -6px #008b8b;
+    border: hidden;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 100px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: 2em;
+    color: #39A9DB;
+}
+
+#overlay {
+    width: 60%;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+    border:1px solid black;
+}
+
+hr {
+    /*取消换行符外边距*/
+    margin: 0;
+}
+
+form {
+    text-align: center;
+}
+
+form p{
+    /*使得堆叠标签与输入框左端对齐*/
+    text-align: left;
+    /*添加与外容器之间的左右间距*/
+    padding: 0 10%;
+}
+
+input,select,textarea{
+    /*使得输入框大小宽度一致,且占据一行的宽度，此时标签与输入框会换行显示*/
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: 2px solid lightsteelblue;
+    border-radius: 8px;
+    background-color: #eeeeee;
+}
+
+input[type=submit] {
+    background-color: deepskyblue;
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+input:focus ,select:focus,textarea:focus {
+    /*获得焦点时去掉外边框*/
+    background-color: whitesmoke;
+    border: none;
+}
+
+#in2 {
+    /*加入小图标*/
+    padding-left: 45px;
+    background: url("logo.png") no-repeat;
+    background-position: left 10px bottom 5px;
+    background-size: 25px;
+    background-color: #eeeeee;
+}
+
+
+@media (min-width: 600px) {
+    input,select,textarea{
+        /*减小输入框的宽度*/
+        width: 70%;
+    }
+    form p {
+        /*使得表单对齐*/
+        text-align: right;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+}
