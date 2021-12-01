@@ -1,0 +1,33 @@
+.card {
+    display: inline-block;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    background: green;
+}
+
+.box > img {
+    /*图片铺满容器，得指定图片宽高，否则object-fit不能使用*/
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    /*缩放替换后的内容以保持其纵横比，同时将其放入元素的内容框。*/
+    /*object-fit: cover;*/
+    /*调整替换内容的大小，以在填充元素的整个内容框时保持其长宽比。该对象将被裁剪以适应。*/
+    object-fit: contain;
+    /*将拉伸或挤压物体以适应*/
+    /*object-fit: fill;*/
+}
+
+.container {
+    width: 400px;
+    /*溢出文本显示省略号*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
